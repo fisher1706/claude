@@ -1,0 +1,147 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="DuplicatedCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <Languages>
+        <language minSize="234" name="Python" />
+      </Languages>
+    </inspection_tool>
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="aiohappyeyeballs" />
+          <option value="aiohttp" />
+          <option value="aiosignal" />
+          <option value="annotated-types" />
+          <option value="anthropic" />
+          <option value="anyio" />
+          <option value="asyncio" />
+          <option value="attrs" />
+          <option value="cachetools" />
+          <option value="certifi" />
+          <option value="cffi" />
+          <option value="charset-normalizer" />
+          <option value="chuk-ai-session-manager" />
+          <option value="chuk-llm" />
+          <option value="chuk-mcp" />
+          <option value="chuk-mcp-client-oauth" />
+          <option value="chuk-sessions" />
+          <option value="chuk-term" />
+          <option value="chuk-tool-processor" />
+          <option value="click" />
+          <option value="colorama" />
+          <option value="cryptography" />
+          <option value="csrf" />
+          <option value="distro" />
+          <option value="docstring_parser" />
+          <option value="dotenv" />
+          <option value="eval_type_backport" />
+          <option value="fast-json" />
+          <option value="filelock" />
+          <option value="frozenlist" />
+          <option value="fsspec" />
+          <option value="google-auth" />
+          <option value="google-genai" />
+          <option value="googleapis-common-protos" />
+          <option value="groq" />
+          <option value="h11" />
+          <option value="httpcore" />
+          <option value="httpx" />
+          <option value="httpx-sse" />
+          <option value="huggingface-hub" />
+          <option value="ibm-cos-sdk" />
+          <option value="ibm-cos-sdk-core" />
+          <option value="ibm-cos-sdk-s3transfer" />
+          <option value="ibm_watsonx_ai" />
+          <option value="idna" />
+          <option value="importlib_metadata" />
+          <option value="invoke" />
+          <option value="jaraco.classes" />
+          <option value="jaraco.context" />
+          <option value="jaraco.functools" />
+          <option value="Jinja2" />
+          <option value="jiter" />
+          <option value="jmespath" />
+          <option value="jsonschema" />
+          <option value="jsonschema-specifications" />
+          <option value="keyring" />
+          <option value="lomond" />
+          <option value="markdown-it-py" />
+          <option value="MarkupSafe" />
+          <option value="mc-cli" />
+          <option value="mcp" />
+          <option value="mcp-cli" />
+          <option value="mdurl" />
+          <option value="mistralai" />
+          <option value="more-itertools" />
+          <option value="multidict" />
+          <option value="numpy" />
+          <option value="ollama" />
+          <option value="openai" />
+          <option value="opentelemetry-api" />
+          <option value="opentelemetry-exporter-otlp-proto-common" />
+          <option value="opentelemetry-exporter-otlp-proto-http" />
+          <option value="opentelemetry-proto" />
+          <option value="opentelemetry-sdk" />
+          <option value="opentelemetry-semantic-conventions" />
+          <option value="orjson" />
+          <option value="packaging" />
+          <option value="pandas" />
+          <option value="prompt_toolkit" />
+          <option value="propcache" />
+          <option value="protobuf" />
+          <option value="psutil" />
+          <option value="pyasn1" />
+          <option value="pyasn1_modules" />
+          <option value="pycparser" />
+          <option value="pydantic" />
+          <option value="pydantic-settings" />
+          <option value="pydantic_core" />
+          <option value="Pygments" />
+          <option value="PyJWT" />
+          <option value="python-dateutil" />
+          <option value="python-dotenv" />
+          <option value="python-multipart" />
+          <option value="pytz" />
+          <option value="pywin32" />
+          <option value="pywin32-ctypes" />
+          <option value="PyYAML" />
+          <option value="referencing" />
+          <option value="regex" />
+          <option value="requests" />
+          <option value="rich" />
+          <option value="rpds-py" />
+          <option value="rsa" />
+          <option value="safetensors" />
+          <option value="shellingham" />
+          <option value="six" />
+          <option value="sniffio" />
+          <option value="sse-starlette" />
+          <option value="starlette" />
+          <option value="tabulate" />
+          <option value="tenacity" />
+          <option value="tiktoken" />
+          <option value="tokenizers" />
+          <option value="tqdm" />
+          <option value="transformers" />
+          <option value="typer" />
+          <option value="typing-inspection" />
+          <option value="typing_extensions" />
+          <option value="tzdata" />
+          <option value="ujson" />
+          <option value="urllib3" />
+          <option value="uuid" />
+          <option value="uvicorn" />
+          <option value="wcwidth" />
+          <option value="websockets" />
+          <option value="yarl" />
+          <option value="zipp" />
+          <option value="agents" />
+          <option value="griffe" />
+          <option value="openai-agents" />
+          <option value="types-requests" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
