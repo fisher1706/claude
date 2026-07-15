@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(update-config)"
+    ],
+    "sandbox": {
+      "enabled": true,
+      "autoAllowBashIfSandboxed": true
+    }
+  },
+  "enabledMcpjsonServers": [
+    "playwright"
+  ],
+  "sandbox": {
+    "enabled": true,
+    "autoAllowBashIfSandboxed": true
+  },
+  "enableAllProjectMcpServers": true
+}

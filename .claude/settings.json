@@ -1,0 +1,53 @@
+{
+  "model": "haiku",
+  "alwaysThinkingEnabled": true,
+  "autoMemoryEnabled": true,
+  "autoCompactEnabled": true,
+  "spinnerTipsEnabled": true,
+  "showTurnDuration": false,
+  "verbose": false,
+
+  "permissions": {
+    "allow": [
+      "Bash(git *)",
+      "Bash(python *)",
+      "Bash(npm *)",
+      "Bash(pip *)",
+      "Bash(ls *)",
+      "Bash(find *)",
+      "Bash(grep *)",
+      "Read",
+      "Edit(.claude)",
+      "Edit(.venv)",
+      "Write"
+    ],
+    "defaultMode": "default"
+  },
+
+  "env": {
+    "PYTHONUNBUFFERED": "1",
+    "DEBUG": "0"
+  },
+
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_input.file_path // .tool_response.filePath' | { read -r f; if [[ $f == *.py ]]; then python -m py_compile \"$f\" 2>/dev/null || true; fi; }",
+            "statusMessage": "Checking Python syntax",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  },
+
+  "attribution": {
+    "commit": "Co-Authored-By: Claude Haiku 4.5 <noreply@anthropic.com>"
+  },
+
+  "enableAllProjectMcpServers": false
+}
