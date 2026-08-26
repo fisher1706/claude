@@ -28,10 +28,10 @@ commands:
 
 - claude -p "explain this project"
 
-start with last session:
+# start with last session:
 - claude -c
 
-switch mode:
+# switch mode:
 - SHIFT + TAB
 
 start with any permissions:
@@ -46,8 +46,19 @@ https://github.com/microsoft/playwright-mcp
 
 claude mcp add playwright npx @playwright/mcp@latest
 
+
+## SKILLS
+https://anthropic-partners.skilljar.com/introduction-to-agent-skills/434526
+
 # to check skills
 /skills
+
+# use PR skill
+Write a PR description to my changes
+Create a PR to my changes
+
+# fix downloading error
+claude --debug
 
 
 

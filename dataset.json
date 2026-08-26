@@ -1,0 +1,14 @@
+[
+  {
+    "task": "Create an IAM policy that allows read-only access to a specific S3 bucket named 'my-app-logs' and all objects within it",
+    "format": "json"
+  },
+  {
+    "task": "Write a function that parses an ARN string and returns a dictionary containing the partition, service, region, account-id, and resource components",
+    "format": "python"
+  },
+  {
+    "task": "Create a regular expression that validates EC2 instance IDs (format: i-xxxxxxxxxxxxxxxxx where x is a hexadecimal character and the ID can be either 8 or 17 characters after 'i-')",
+    "format": "regex"
+  }
+]

@@ -23,7 +23,7 @@ source .venv/bin/activate  # Linux/macOS
 
 Run the main script:
 ```bash
-python main.py
+python 001_requests.py
 ```
 
 ## Data
