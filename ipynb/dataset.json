@@ -1,0 +1,14 @@
+[
+  {
+    "task": "Extract the AWS region from an S3 bucket URL like 's3://my-bucket.us-west-2.amazonaws.com/key'",
+    "format": "regex"
+  },
+  {
+    "task": "Parse an AWS CloudWatch log entry and extract the timestamp, log level, and message",
+    "format": "python"
+  },
+  {
+    "task": "Create a CloudFormation template snippet for an IAM role that allows EC2 instances to access S3",
+    "format": "json"
+  }
+]

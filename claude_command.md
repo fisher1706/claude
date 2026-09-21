@@ -1,66 +1,80 @@
-https://claude.ai/settings/usage
+# Claude Code Quick Reference
 
-https://claudefa.st/blog/guide/development/usage-optimization
+## Essential Commands & Shortcuts
 
-/context
+### Navigation & Context
+- `/context` — View current context
+- `/compact` — Compact mode
+- `/usage` — Check token usage
+- `/models` — View available models
+- `/config` — Configure settings
+- `/resume` — Resume last session
+- `/sandbox` — Manage sandbox
 
-/compact
+### Session Control
+- `/rewind` or **ESC + ESC** — Rewind to previous state
+- `/mcp` — Manage MCP servers
+- `/init` — Initialize CLAUDE.md
 
-/usage
+### Mode Switching
+- **SHIFT + TAB** — Switch mode (Normal ↔ Plan ↔ Fast)
 
-/models
+## CLI Usage
 
-/config
+```bash
+# Start session normally
+claude "explain this project"
 
-/resume
+# Use plan mode
+claude -p "explain this project"
 
-/sandbox
+# Continue from last session
+claude -c
 
-/rewind  - or [ESC + ESC]
+# Skip all permission prompts
+claude --dangerously-skip-permissions
 
-/init
-
-/mcp
-
-commands:
-
-- claude "explain this project"
-
-- claude -p "explain this project"
-
-# start with last session:
-- claude -c
-
-# switch mode:
-- SHIFT + TAB
-
-start with any permissions:
-- claude --dangerously-skip-permissions
-
-mcp servers:
-https://context7.com/docs/resources/all-clients#claude-code
-
-
-playwright mcp:
-https://github.com/microsoft/playwright-mcp
-
-claude mcp add playwright npx @playwright/mcp@latest
-
-
-## SKILLS
-https://anthropic-partners.skilljar.com/introduction-to-agent-skills/434526
-
-# to check skills
-/skills
-
-# use PR skill
-Write a PR description to my changes
-Create a PR to my changes
-
-# fix downloading error
+# Debug mode
 claude --debug
+```
 
+## Debugging & Skills
 
+### Available Skills
+```bash
+/skills          # List available skills
+/code-review     # Review code (low/medium/high/ultra)
+/simplify        # Simplify changed code
+/design          # Create design canvas
+/dataviz         # Create data visualizations
+/pr-description  # Generate PR description
+/run             # Run/test the project
+```
 
+### Error Recovery
+- `claude --debug` — Enable debug logging for troubleshooting
 
+## MCP Servers
 
+### Playwright (Web Automation)
+```bash
+claude mcp add playwright npx @playwright/mcp@latest
+```
+
+**Documentation:** https://github.com/microsoft/playwright-mcp
+
+**All MCP Clients:** https://context7.com/docs/resources/all-clients#claude-code
+
+## Learning Resources
+
+- **Skills Introduction:** https://anthropic-partners.skilljar.com/introduction-to-agent-skills/434526
+- **Usage Optimization:** https://claudefa.st/blog/guide/development/usage-optimization
+- **Usage Dashboard:** https://claude.ai/settings/usage
+
+## Quick Tips
+
+✅ Use **Skills** for structured workflows (PR creation, code review, etc.)  
+✅ Use **`/` commands** for navigation and context management  
+✅ Use **SHIFT + TAB** to toggle between different modes  
+✅ Use **`claude -c`** to continue previous sessions  
+✅ Check `/skills` for latest available tools
